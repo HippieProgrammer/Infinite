@@ -18,6 +18,9 @@ project "Infinite"
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "infpch.h"
+	pchsource "Infinite/src/infpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <memory>
+#include "infpch.h"
 #include "Core.h"
 #include "spdlog/spdlog.h"
 #include "spdlog/fmt/ostr.h"

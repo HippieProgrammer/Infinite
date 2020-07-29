@@ -34,6 +34,7 @@
     <ClInclude Include="src\Infinite\Log.h">
       <Filter>Infinite</Filter>
     </ClInclude>
+    <ClInclude Include="src\infpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Infinite\Application.cpp">
@@ -42,8 +43,6 @@
     <ClCompile Include="src\Infinite\Log.cpp">
       <Filter>Infinite</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="cpp.hint" />
+    <ClCompile Include="src\infpch.cpp" />
   </ItemGroup>
 </Project>
