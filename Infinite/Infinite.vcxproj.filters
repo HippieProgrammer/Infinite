@@ -1,36 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Infinite">
+      <UniqueIdentifier>{DB7597E3-C742-F2EE-F05B-E096DC87277D}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Infinite\Events">
+      <UniqueIdentifier>{5F9DC811-CB28-36D6-D439-B9CA404492D6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Infinite\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Infinite.h" />
     <ClInclude Include="src\Infinite\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>Infinite</Filter>
     </ClInclude>
-    <ClInclude Include="src\Infinite.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Infinite\Core.h">
+      <Filter>Infinite</Filter>
     </ClInclude>
     <ClInclude Include="src\Infinite\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>Infinite</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infinite\Events\ApplicationEvent.h">
+      <Filter>Infinite\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infinite\Events\Event.h">
+      <Filter>Infinite\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infinite\Events\KeyEvent.h">
+      <Filter>Infinite\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infinite\Events\MouseEvent.h">
+      <Filter>Infinite\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Infinite\Log.h">
+      <Filter>Infinite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Infinite\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Infinite</Filter>
     </ClCompile>
+    <ClCompile Include="src\Infinite\Log.cpp">
+      <Filter>Infinite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

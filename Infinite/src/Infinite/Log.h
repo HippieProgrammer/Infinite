@@ -3,6 +3,7 @@
 #include <memory>
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Infinite {
 
@@ -33,3 +34,4 @@ namespace Infinite {
 #define HZ_WARN(...)          ::Infinite::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define HZ_ERROR(...)         ::Infinite::Log::GetClientLogger()->error(__VA_ARGS__)
 #define HZ_FATAL(...)         ::Infinite::Log::GetClientLogger()->fatal(__VA_ARGS__)
+

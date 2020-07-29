@@ -9,3 +9,5 @@
 #else
 	#error The Infinite Engine currently only supports the Windows platform.
 #endif
+
+#define BIT(x) (1 << x)

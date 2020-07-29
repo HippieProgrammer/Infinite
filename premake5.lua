@@ -26,6 +26,7 @@ project "Infinite"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
@@ -57,8 +58,8 @@ project "Infinite"
 		defines "HZ_DIST"
 		optimize "On"
 
-project "sandbox"
-	location "sandbox"
+project "Sandbox"
+	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
 	
