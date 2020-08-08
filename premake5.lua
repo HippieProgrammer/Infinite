@@ -40,25 +40,25 @@ project "Infinite"
 
 		defines
 		{
-			"HZ_PLATFORM_WINDOWS",
-			"HZ_BUILD_DLL"
+			"INF_PLATFORM_WINDOWS",
+			"INF_BUILD_DLL"
 		}
 
 		postbuildcommands
 		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/sandbox")
+			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 	
 	filter "configurations:Debug"
-		defines "HZ_DEBUG"		
+		defines "INF_DEBUG"		
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "HZ_RELEASE"
+		defines "INF_RELEASE"
 		optimize "On"
 
 	filter "configurations:Dist"
-		defines "HZ_DIST"
+		defines "INF_DIST"
 		optimize "On"
 
 project "Sandbox"
@@ -93,17 +93,17 @@ project "Sandbox"
 
 		defines
 		{
-			"HZ_PLATFORM_WINDOWS",
+			"INF_PLATFORM_WINDOWS",
 		}
 	
 	filter "configurations:Debug"
-		defines "HZ_DEBUG"		
+		defines "INF_DEBUG"		
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "HZ_RELEASE"
+		defines "iNF_RELEASE"
 		optimize "On"
 
 	filter "configurations:Dist"
-		defines "HZ_DIST"
+		defines "INF_DIST"
 		optimize "On"

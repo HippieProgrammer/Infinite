@@ -17,7 +17,7 @@ namespace Infinite
 	{
 		Infinite::Log::Init();
 		WindowResizeEvent e(1280, 720);
-		HZ_TRACE(e);
+		INF_TRACE(e);
 
 		while (true);
 	}
